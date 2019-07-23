@@ -685,7 +685,7 @@ input[type="text"] + .icon-password {
   color: #fff;
   width: 420px;
   border: 1px solid #2e2e2e;
-  padding: 20px 50px 20px 20px;
+  padding: 15px 50px 15px 20px;
 }
 
 .header-search__input:focus + .icon-uniE1A3 {
