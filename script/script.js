@@ -187,6 +187,11 @@ APP.$document.ready(function() {
   doAnimation ();
   APP.$document.on('scroll', function(event){
     doAnimation ();
+    if($('header').offset().top !== 0){
+      $('header').addClass('black');
+    } else {
+      $('header').removeClass('black');
+    }
   });
 
   $('.header-search').on('click', function(){
