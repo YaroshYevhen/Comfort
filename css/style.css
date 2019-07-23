@@ -349,6 +349,19 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+textarea::placeholder {
+  color: #424242;
+}
+
+input::placeholder {
+  color: #424242;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -1693,6 +1706,11 @@ body.menu .header-icons {
   resize: none;
   padding: 15px 20px;
   color: #000;
+}
+
+.questions-alt input::placeholder,
+.questions-alt textarea::placeholder {
+  color: #424242;
 }
 
 .questions-alt input:active, .questions-alt input:focus,
