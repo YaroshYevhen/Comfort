@@ -1,5 +1,8 @@
 /* max-width: 1025px */
 @media (min-width: 1025px) {
+  .order__checkbox:hover {
+    box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.15);
+  }
   .catalog-filters__selected:hover {
     border-color: #ff0000;
   }
