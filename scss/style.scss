@@ -1586,6 +1586,7 @@ input:checked ~ .checkmark {
 		&__container {
 			flex-direction: column;
 			max-height: 330px;
+			width: 100%;
 			transition: max-height .3s ease-out;
 			overflow: hidden;
 			flex-wrap: nowrap;
@@ -1641,6 +1642,9 @@ input:checked ~ .checkmark {
 		&__checkbox {
 			position: relative;
 			cursor: pointer;
+			input[type="checkbox"] {
+				display: none;
+			}
 			span {
 				width: calc(100% - 40px);
 				margin-left: 25px;

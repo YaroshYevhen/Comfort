@@ -1911,6 +1911,7 @@ input:checked ~ .checkmark::before {
 .catalog-filters__container {
   flex-direction: column;
   max-height: 330px;
+  width: 100%;
   transition: max-height .3s ease-out;
   overflow: hidden;
   flex-wrap: nowrap;
@@ -1969,6 +1970,10 @@ input:checked ~ .checkmark::before {
 .catalog-filters__checkbox {
   position: relative;
   cursor: pointer;
+}
+
+.catalog-filters__checkbox input[type="checkbox"] {
+  display: none;
 }
 
 .catalog-filters__checkbox span {
