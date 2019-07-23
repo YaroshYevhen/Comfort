@@ -1093,6 +1093,7 @@ body.menu .header-icons {
 
 .features__text {
   text-align: center;
+  width: 100%;
 }
 
 .features.animate .features-item {
