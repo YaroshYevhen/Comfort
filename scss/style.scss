@@ -1126,6 +1126,9 @@ body.menu {
 		resize: none;
 		padding: 15px 20px;
 		color: #fff;
+		&::placeholder {
+			color: #424242;
+		}
 		&:active,
 		&:focus {
 			transition: border-color .3s;
@@ -1397,6 +1400,9 @@ body.menu {
 		resize: none;
 		padding: 15px 20px;
 		color: #000;
+		&::placeholder {
+			color: #424242;
+		}
 		&:active,
 		&:focus {
 			border-color: #000;
