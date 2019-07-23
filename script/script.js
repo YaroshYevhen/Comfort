@@ -202,6 +202,7 @@ APP.$document.ready(function() {
   APP.hamburger.on('click', function(){
     $(this).toggleClass('active');
     $('body').toggleClass('menu');
+    $('html').toggleClass('overflow');
   });
 
   APP.dropdown.on('click', function(){
