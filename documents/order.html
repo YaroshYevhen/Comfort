@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/slick-theme.css">
+	<link rel="stylesheet" href="../css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/media.css">
+</head>
+<body>
+	<header class="header flex-between">
+		<div class="header-tablet flex-c">
+			<a href="#" class="nav__logo"></a>
+			<div class="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div class="header-menu flex-c">
+			<div class="header__tel flex-between">
+				<a href="tel:+7 812 321 11 33" class="flex-c"><span class="icon-viber"></span>+7(812) 321 11 33
+				</a>
+				<a href="tel:+7 812 321 11 33" class="flex-c"><span class="icon-whatsapp"></span>+7(812) 321 11 33
+				</a>
+			</div>
+			<nav class="nav">
+				<ul class="nav__ul flex-between">
+					<li class="nav__li"><a href="../documents/stock.html" class="nav__item">склад</a></li>
+					<li class="nav__li"><a href="../documents/stock.html" class="nav__item">производство</a></li>
+					<li class="nav__li"><a href="../documents/dealers.html" class="nav__item">дилерам</a></li>
+					<li class="nav__li logo__li"><a href="../index.html" class="nav__item nav__logo"></a></li>
+					<li class="nav__li dropdown-parent">
+						<span class="nav__item dropdown">покупателям <span class="icon-uniE011 font-12"></span></span>
+						<ul class="dropdown-content">
+							<li class="dropdown__item"><a href="../documents/categories.html">магазин</a></li>
+							<li class="dropdown__item"><a href="../documents/payment&delivery.html">оплата и доставка</a></li>
+							<li class="dropdown__item"><a href="../documents/return-policy.html">условия возврата</a></li>
+							<li class="dropdown__item"><a href="#">гарантия</a></li>
+							<li class="dropdown__item"><a href="../documents/discounts.html">акции и скидки</a></li>
+						</ul>
+					</li>
+					<li class="nav__li"><a href="../documents/news.html" class="nav__item">новости</a></li>
+					<li class="nav__li"><a href="../documents/contacts.html" class="nav__item">контакты</a></li>
+				</ul>
+			</nav>
+			<span class="header__lang dropdown-parent"><span class="dropdown">рус <span class="icon-uniE011 font-10"></span></span>
+				<ul class="dropdown-content">
+					<li class="dropdown__item"><a href="#">рус</a></li>
+					<li class="dropdown__item"><a href="#">eng</a></li>
+				</ul>
+			</span>
+		</div>
+		<div class="header-icons flex-between">
+			<div class="header__tel flex-between">
+				<a href="tel:+7 812 321 11 33" class="flex-c"><span class="icon-viber"></span>+7(812) 321 11 33
+				</a>
+				<a href="tel:+7 812 321 11 33" class="flex-c"><span class="icon-whatsapp"></span>+7(812) 321 11 33
+				</a>
+			</div>
+			<span class="header__lang dropdown-parent"><span class="dropdown">рус <span class="icon-uniE011 font-10"></span></span>
+				<ul class="dropdown-content">
+					<li class="dropdown__item"><a href="#">рус</a></li>
+					<li class="dropdown__item"><a href="#">eng</a></li>
+				</ul>
+			</span>
+			<span class="header-account flex-c dropdown-parent">
+				<!-- Вход не выполнен -->
+				<span class="icon-login modal-btn" data-target="log-in"></span>
+				<p>
+					<span class="modal-btn" data-target="log-in">Вход</span> / <span class="modal-btn" data-target="registration">Регистрация</span>
+				</p>
+				<!-- -->
+				<!-- Вход выполнен -->
+				<!-- <a href="../documents/account.html" class="icon-login"></a>
+				<span class="header-account__name dropdown tablet-hide">Евгений</span>
+				<ul class="dropdown-content tablet-hide">
+					<li class="dropdown__item"><a href="../documents/account.html">Мой профиль</a></li>
+					<li class="dropdown__item"><a href="../documents/history.html">История заказов</a></li>
+					<li class="dropdown__item exit"><a href="#">Выйти</a></li>
+				</ul> -->
+				<!-- -->
+			</span>
+			<label class="header-search"><input type="text" class="header-search__input"><span class="icon-uniE1A3"></span>
+			</label>
+			<a href="../documents/favorite.html" class="icon-star">
+			</a>
+			<a href="../documents/cart.html" class="icon-cart">
+			</a>
+		</div>
+	</header>
+
+	<main>
+		<ul class="breadcrumbs wrapper">
+      <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+      <li class="breadcrumbs__item"><a href="#">Корзина</a></li>
+      <li class="breadcrumbs__item"><a href="#">Оформление заказа</a></li>
+    </ul>
+
+    <section class="order wrapper js-animation">
+    	<h1 class="title-l order__title">оформление заказа</h1>
+    	<div class="order-personal">
+    		<h2 class="order__subtitle">Шаг 1. Личные данные</h2>
+    		<label class="order-personal__item flex-c">
+    			<input type="text" placeholder="ФИО">
+    			<p>Ваше имя необходимо для получения заказа</p>
+    		</label>
+    		<label class="order-personal__item flex-c">
+    			<input type="tel" placeholder="Телефон">
+    			<p>Мы перезвоним вам для подтверждения заказа</p>
+    		</label>
+    		<label class="order-personal__item flex-c">
+    			<input type="email" placeholder="Почта">
+    			<p>На почту вы будете получать всю информацию по состоянию вашего заказа</p>
+    		</label>
+    	</div>
+    	<div class="order-delivery">
+    		<h2 class="order__subtitle">Шаг 2. Доставка</h2>
+    		<div class="order-item flex-c">
+    			<div class="show-text icon-info mobile-show"></div>
+    			<div class="order__checkbox flex-c-c">
+    				<label class="order__checkmark" data-name="Acure"><input type="radio" name="delivery" value="самовывоз"><div class="checkmark"></div></label>
+    				<img src="../img/order-1.png">
+    				<span>Самовывоз со склада</span>
+    			</div>
+    			<div class="order__text">
+    				<p>Самовывоз осуществляется бесплатно в рабочие дни с 9:00 до 18:00 по адресу:</p>
+    				<p>г. Москва, Краснобогатырская ул, дом 2, стр 14, этаж 1</p>
+    				<div class="close mobile-show"></div>
+    			</div>
+    		</div>
+    		<div class="order-item flex-c">
+    			<div class="show-text icon-info mobile-show"></div>
+    			<div class="order__checkbox flex-c-c">
+    				<label class="order__checkmark" data-name="Acure"><input type="radio" name="delivery" value="доставка" checked><div class="checkmark"></div></label>
+    				<img src="../img/order-2.png">
+    				<span>Транспортная компания</span>
+    			</div>
+    			<div class="order__text">
+    				<p>Доставка в регионы осуществляется любой транспортной компанией на усмотрение клиента:</p>
+    				<p>"Деловые линии", "ПЭК", "Автотрейдинг", "Желдор", "СДЭК", "КИТ"</p>
+    				<p>Стоимость доставки товара курьером до транспортной компании составляет <span class="nowrap">300 руб.</span> Стоимость услуг транспортной компании вы оплачиваете при получении товара</p>
+    				<div class="close mobile-show"></div>
+    			</div>
+    		</div>
+    		<div class="order-address">
+    			<span>Адрес доставки:</span>
+    			<div class="flex-s">
+    				<input type="text" placeholder="Город">
+    				<input type="text" placeholder="Улица">
+    				<input type="text" placeholder="Дом">
+    				<input type="number" placeholder="Квартира">
+    			</div>
+    		</div>
+    	</div>
+    	<div class="order-payment">
+    		<h2 class="order__subtitle">Шаг 3. Оплата</h2>
+    		<div class="order-item flex-c">
+    			<div class="show-text icon-info mobile-show"></div>
+    			<div class="order__checkbox flex-c-c">
+    				<label class="order__checkmark" data-name="Acure"><input type="radio" name="payment" value="наличные"><div class="checkmark"></div></label>
+    				<img src="../img/order-3.png">
+    				<span>Наличными при получении заказа</span>
+    			</div>
+    			<div class="order__text">
+    				<p>Вы можете рассчитаться, заплатив полную стоимость наличными при получении. В эту сумму входит:</p>
+    				<p>Непосредственная стоимость товара, плата за доставку заказа нашим курьером  в ТК и стоимость услуг ТК</p>
+    				<div class="close mobile-show"></div>
+    			</div>
+    		</div>
+    		<div class="order-item flex-c">
+    			<div class="show-text icon-info mobile-show"></div>
+    			<div class="order__checkbox flex-c-c">
+    				<label class="order__checkmark" data-name="Acure"><input type="radio" name="payment" value="банковская карта"><div class="checkmark"></div></label>
+    				<img src="../img/order-4.png">
+    				<span>Онлайн оплата банковской картой</span>
+    			</div>
+    			<div class="order__text">
+    				<p>Принимаем к оплате банковские карты:</p>
+    				<p>VISA, MasterCard, Maestro, Мир</p>
+    				<div class="close mobile-show"></div>
+    			</div>
+    		</div>
+    		<div class="order-item flex-c">
+    			<div class="show-text icon-info mobile-show"></div>
+    			<div class="order__checkbox flex-c-c">
+    				<label class="order__checkmark" data-name="Acure"><input type="radio" name="payment" value="безналичный рассчет" checked><div class="checkmark"></div></label>
+    				<img src="../img/order-5.png">
+    				<span>Безналичный расчет (банковская квитанция)</span>
+    			</div>
+    			<div class="order__text">
+    				<p>Оплата производится безналичным перечислением средств по квитанции через банк:</p>
+    				<p>"Сбербанк" или по выставленному счёту (для юридических лиц)</p>
+    				<div class="close mobile-show"></div>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="order-buttons flex-between">
+    		<a href="cart.html" class="standart-btn black-btn">назад к корзине</a>
+    		<button class="standart-btn red-btn">подтвердить заказ</button>
+    	</div>
+    </section>
+	</main>
+
+	<footer class="footer">
+		<section class="footer-contacts flex-s">
+			<div class="wrapper flex-s">
+				<a href="#" class="footer__logo" style="background-image: url(../img/logo.png);"></a>
+				<address class="footer-address flex-between flex-no-wrap">
+					<div class="footer-address__left"><p>МО, Ленинский район, сельское поселение Молоковское, д. Андреевское,  ул. Свердлова, владение 3, строение 1</p></div>
+					<div class="footer-address__right flex-between">
+						<a href="mailto:info@comfort-avto.com" class="footer-address__email">info@comfort-avto.com</a>
+						<div class="footer-address__tel"><a href="tel:+7 812 321 11 33">+7(812) 321 11 33</a><a href="tel:+7 812 321 11 33">+7(812) 321 11 33</a></div>
+						<div class="socials flex-between">
+							<a href="#" class="socials__item flex-c-c">
+								<span class="icon-fb"></span>
+							</a>
+							<a href="#" class="socials__item flex-c-c">
+								<span class="icon-inst"></span>
+							</a>
+							<a href="#" class="socials__item flex-c-c">
+								<span class="icon-wa"></span>
+							</a>
+							<a href="#" class="socials__item flex-c-c">
+								<span class="icon-vb"></span>
+							</a>
+						</div>
+					</div>
+				</address>
+				<div class="footer-nav flex-between">
+					<div class="footer-nav__left flex-between">
+						<a href="" class="footer-nav__item">склад</a>
+						<a href="" class="footer-nav__item">производство</a>
+						<a href="" class="footer-nav__item">дилерам</a>
+					</div>
+					<div class="footer-nav__right flex-between">
+						<a href="" class="footer-nav__item">покупателям</a>
+						<a href="" class="footer-nav__item">новости</a>
+						<a href="" class="footer-nav__item">контакты</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="footer-copyrights flex-c-c">
+			<span>Comfort-Auto 2019 | Все права защищены</span>
+		</section>
+
+	</footer>
+	<script src="../script/jquery.js"></script>
+	<script src="../script/jquery-ui.min.js"></script>
+	<script src="../script/slick.min.js"></script>
+	<script src="../script/script.js"></script>
+	<script>
+		APP.orderShowText = $('.order-item .show-text');
+		APP.orderHideText = $('.order-item .close');
+
+		APP.orderShowText.on('click', function(){
+			$('.order__text').removeClass('show');
+			$(this).parents('.order-item').find('.order__text').addClass('show');
+		});
+		APP.orderHideText.on('click', function(){
+			$(this).parents('.order__text').removeClass('show');
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/slick-theme.css">
+	<link rel="stylesheet" href="../css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/media.css">
+</head>
+<body>
+	<header class="header flex-between">
+		<div class="header-tablet flex-c">
+			<a href="#" class="nav__logo"></a>
+			<div class="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div class="header-menu flex-c">
+			<div class="header__tel flex-between">
+				<a href="tel:+7 812 321 11 33" class="flex-c"><span class="icon-viber"></span>+7(812) 321 11 33
+				</a>
+				<a href="tel:+7 812 321 11 33" class="flex-c"><span class="icon-whatsapp"></span>+7(812) 321 11 33
+				</a>
+			</div>
+			<nav class="nav">
+				<ul class="nav__ul flex-between">
+					<li class="nav__li"><a href="../documents/stock.html" class="nav__item">склад</a></li>
+					<li class="nav__li"><a href="../documents/stock.html" class="nav__item">производство</a></li>
+					<li class="nav__li"><a href="../documents/dealers.html" class="nav__item">дилерам</a></li>
+					<li class="nav__li logo__li"><a href="../index.html" class="nav__item nav__logo"></a></li>
+					<li class="nav__li dropdown-parent">
+						<span class="nav__item dropdown">покупателям <span class="icon-uniE011 font-12"></span></span>
+						<ul class="dropdown-content">
+							<li class="dropdown__item"><a href="../documents/categories.html">магазин</a></li>
+							<li class="dropdown__item"><a href="../documents/payment&delivery.html">оплата и доставка</a></li>
+							<li class="dropdown__item"><a href="../documents/return-policy.html">условия возврата</a></li>
+							<li class="dropdown__item"><a href="#">гарантия</a></li>
+							<li class="dropdown__item"><a href="../documents/discounts.html">акции и скидки</a></li>
+						</ul>
+					</li>
+					<li class="nav__li"><a href="../documents/news.html" class="nav__item">новости</a></li>
+					<li class="nav__li"><a href="../documents/contacts.html" class="nav__item">контакты</a></li>
+				</ul>
+			</nav>
+			<span class="header__lang dropdown-parent"><span class="dropdown">рус <span class="icon-uniE011 font-10"></span></span>
+				<ul class="dropdown-content">
+					<li class="dropdown__item"><a href="#">рус</a></li>
+					<li class="dropdown__item"><a href="#">eng</a></li>
+				</ul>
+			</span>
+		</div>
+		<div class="header-icons flex-between">
+			<div class="header__tel flex-between">
+				<a href="tel:+7 812 321 11 33" class="flex-c"><span class="icon-viber"></span>+7(812) 321 11 33
+				</a>
+				<a href="tel:+7 812 321 11 33" class="flex-c"><span class="icon-whatsapp"></span>+7(812) 321 11 33
+				</a>
+			</div>
+			<span class="header__lang dropdown-parent"><span class="dropdown">рус <span class="icon-uniE011 font-10"></span></span>
+				<ul class="dropdown-content">
+					<li class="dropdown__item"><a href="#">рус</a></li>
+					<li class="dropdown__item"><a href="#">eng</a></li>
+				</ul>
+			</span>
+			<span class="header-account flex-c dropdown-parent">
+				<!-- Вход не выполнен -->
+				<span class="icon-login modal-btn" data-target="log-in"></span>
+				<p>
+					<span class="modal-btn" data-target="log-in">Вход</span> / <span class="modal-btn" data-target="registration">Регистрация</span>
+				</p>
+				<!-- -->
+				<!-- Вход выполнен -->
+				<!-- <a href="../documents/account.html" class="icon-login"></a>
+				<span class="header-account__name dropdown tablet-hide">Евгений</span>
+				<ul class="dropdown-content tablet-hide">
+					<li class="dropdown__item"><a href="../documents/account.html">Мой профиль</a></li>
+					<li class="dropdown__item"><a href="../documents/history.html">История заказов</a></li>
+					<li class="dropdown__item exit"><a href="#">Выйти</a></li>
+				</ul> -->
+				<!-- -->
+			</span>
+			<label class="header-search"><input type="text" class="header-search__input"><span class="icon-uniE1A3"></span>
+			</label>
+			<a href="../documents/favorite.html" class="icon-star">
+			</a>
+			<a href="../documents/cart.html" class="icon-cart">
+			</a>
+		</div>
+	</header>
+
+	<main>
+		<ul class="breadcrumbs wrapper">
+      <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+      <li class="breadcrumbs__item"><a href="#">Магазин</a></li>
+      <li class="breadcrumbs__item"><a href="#">Категории</a></li>
+      <li class="breadcrumbs__item"><a href="#">Автомобильные коврики</a></li>
+    </ul>
+		<section class="catalog wrapper js-animation">
+			<h1 class="title-l catalog__title">автомобильные коврики</h1>
+			<div class="catalog-content flex-s">
+				<div class="catalog-filters">
+					<div class="filter-dropdown-close"></div>
+					<h2 class="catalog-filters__title">Фильтры</h2>
+					<div class="catalog-filters-current">
+						<div class="catalog-filters__remove">Сбросить все фильтры <span class="icon-x-red font-12"></span></div>
+						<div class="selected-container flex-s">
+							<span class="catalog-filters__selected">BMW <span class="icon-x-red font-10"></span></span>
+							<span class="catalog-filters__selected">1 (F20/F21) 11- <span class="icon-x-red font-10"></span></span>
+							<span class="catalog-filters__selected">Ворса <span class="icon-x-red font-10"></span></span>
+						</div>
+					</div>
+					<div class="catalog-filters-section filter_brand flex-s">
+						<h3 class="catalog-filters__name">Категория <span class="icon-uniE011 font-10"></span></h3>
+						<div class="catalog-filters__container flex-s">
+							<label class="catalog-filters__checkbox" data-name="Acure"><input type="checkbox"><div class="checkmark"></div><span>Брызговики</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>Автомобиль&shy;ные коврики</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>Дефлекторы</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>Чехлы для сидений</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>Колпаки</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>Оплетки на руль</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>Решетки радиатора</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>Тенты для автомобилей</span></label>
+						</div>
+						<span class="catalog-filters__more"><span>Больше вариантов</span> <span class="icon-uniE011 font-10"></span></span>
+					</div>
+					<div class="catalog-filters-section filter_brand flex-s">
+						<h3 class="catalog-filters__name">Марка авто <span class="icon-uniE011 font-10"></span></h3>
+						<div class="catalog-filters__container flex-s">
+							<label class="catalog-filters__checkbox" data-name="Acure"><input type="checkbox"><div class="checkmark"></div><span>Acure</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>Alfa Romeo</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>Audi</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>BMW</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>BYD</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>Chery</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>Chevrolet</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>Chrysler</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>Citroen</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>Dacia</span></label>
+						</div>
+						<span class="catalog-filters__more"><span>Больше вариантов</span> <span class="icon-uniE011 font-10"></span></span>
+					</div>
+					<div class="catalog-filters-section filter_model flex-s">
+						<h3 class="catalog-filters__name">Модель <span class="icon-uniE011 font-10"></span></h3>
+						<div class="catalog-filters__container flex-s">
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>i3 13-</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>X5 (G05) 18-</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>1 (E81/E82/E87) 04-</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>1 (F20/F21) 11-</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>3 (E30) 82-94</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>3 (E36) 90-00</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>3 (E46) 98-06</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>3 (E90/E91/E92/E93) 04-11</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>3 (F30) 12-</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>4 (F32) 13-</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>i3 13-</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>X5 (G05) 18-</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>1 (E81/E82/E87) 04-</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>1 (F20/F21) 11-</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>3 (E30) 82-94</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>3 (E36) 90-00</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>3 (E46) 98-06</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>3 (E90/E91/E92/E93) 04-11</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>3 (F30) 12-</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>4 (F32) 13-</span></label>
+						</div>
+						<span class="catalog-filters__more"><span>Больше вариантов</span> <span class="icon-uniE011 font-10"></span></span>
+					</div>
+					<div class="catalog-filters-section filter_price flex-s">
+						<h3 class="catalog-filters__name">Цена <span class="icon-uniE011 font-10"></span></h3>
+ 						<div class="catalog-filters__container">
+ 							<div id="slider-range"></div>
+ 							<div class="range flex-between">
+ 								<input type="number" class="range__input range__input_min" value="0">
+ 								<span>-</span>
+ 								<input type="number" class="range__input range__input_max" value="3000">
+ 							</div>
+ 						</div>
+					</div>
+					<div class="catalog-filters-section filter_material flex-s">
+						<h3 class="catalog-filters__name">Материал <span class="icon-uniE011 font-10"></span></h3>
+						<div class="catalog-filters__container flex-s">
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>Полимер</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>Полиуритан</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>Резина</span></label>
+							<label class="catalog-filters__checkbox"><input type="checkbox"><div class="checkmark"></div><span>Ворса</span></label>
+						</div>
+						<span class="catalog-filters__more"><span>Больше вариантов</span> <span class="icon-uniE011 font-10"></span></span>
+					</div>
+				</div>
+				<div class="catalog-products">
+					<div class="catalog-header flex-between">
+						<div class="catalog__sort flex-c">
+							<span class="mobile-hide">Сортировать: </span>
+							<span class="mobile-icon icon-uniE174"></span>
+							<div class="catalog-dropdown"><span class="catalog-dropdown__current"><span class="text">По умолчанию</span><span class="icon-uniE011 font-10"></span></span>
+								<ul class="catalog-dropdown__content">
+									<li class="catalog-dropdown__item current">По умолчанию</li>
+									<li class="catalog-dropdown__item">По названию (А - Я)</li>
+									<li class="catalog-dropdown__item">По названию (Я -А)</li>
+									<li class="catalog-dropdown__item">Цена (по возрастанию)</li>
+									<li class="catalog-dropdown__item">Цена (по убыванию)</li>
+								</ul>
+							</div>
+						</div>
+						<div class="catalog__amount flex-c">
+							<span class="mobile-hide">Показывать по: </span> 
+							<span class="mobile-icon" style="background-image: url(../img/sort.png);"></span>
+							<div class="catalog-dropdown"><span class="catalog-dropdown__current"><span class="text">10</span><span class="icon-uniE011 font-10"></span></span>
+								<ul class="catalog-dropdown__content">
+									<li class="catalog-dropdown__item current">10</li>
+									<li class="catalog-dropdown__item">15</li>
+									<li class="catalog-dropdown__item">20</li>
+								</ul>
+							</div>
+						</div>
+						<div class="filter-dropdown flex-c-c icon-filter"></div>
+					</div>
+					<div class="catalog-container flex-s">
+						<div class="products-item hit" data-id="1" data-hit="Топ продаж">
+							<a href="../documents/product.html" class="products-link"><div class="products__img" style="background-image: url(../img/products-slider-1.png);"></div>
+								<div class="products__text">Коврики резиновые PREMIUM для KIA Optima IV</div></a>
+							<span class="products__type">Комплект</span>
+							<div class="products-bottom flex-between">
+								<span class="products__price">3000 руб</span>
+								<span class="products__star modal-btn icon-star-products" data-target="fav-modal"></span>
+								<span class="products__cart modal-btn flex-c-c" data-target="cart-modal"><span class="icon-cart-products"></span></span>
+							</div>
+						</div>
+						<div class="products-item">
+							<a href="../documents/product.html" class="products-link"><div class="products__img" style="background-image: url(../img/products-slider-2.png);"></div>
+								<div class="products__text">Коврики резиновые 3D PREMIUM для Hyundai Sonata</div></a>
+							<span class="products__type">Комплект</span>
+							<div class="products-bottom flex-between">
+								<span class="products__price">3000 руб</span>
+								<span class="products__star modal-btn icon-star-products" data-target="fav-modal"></span>
+								<span class="products__cart modal-btn flex-c-c" data-target="cart-modal"><span class="icon-cart-products"></span></span>
+							</div>
+						</div>
+						<div class="products-item">
+							<a href="../documents/product.html" class="products-link"><div class="products__img" style="background-image: url(../img/products-slider-3.png);"></div>
+								<div class="products__text">Коврики резиновые PREMIUM для KIA Optima IV</div></a>
+							<span class="products__type">Комплект</span>
+							<div class="products-bottom flex-between">
+								<span class="products__price">3000 руб</span>
+								<span class="products__star modal-btn icon-star-products" data-target="fav-modal"></span>
+								<span class="products__cart modal-btn flex-c-c" data-target="cart-modal"><span class="icon-cart-products"></span></span>
+							</div>
+						</div>
+						<div class="products-item">
+							<a href="../documents/product.html" class="products-link"><div class="products__img" style="background-image: url(../img/products-slider-1.png);"></div>
+								<div class="products__text">Коврики резиновые PREMIUM для KIA Optima IV</div></a>
+							<span class="products__type">Комплект</span>
+							<div class="products-bottom flex-between">
+								<span class="products__price">3000 руб</span>
+								<span class="products__star modal-btn icon-star-products" data-target="fav-modal"></span>
+								<span class="products__cart modal-btn flex-c-c" data-target="cart-modal"><span class="icon-cart-products"></span></span>
+							</div>
+						</div>
+						<div class="products-item hit" data-hit="Суперцена">
+							<a href="../documents/product.html" class="products-link"><div class="products__img" style="background-image: url(../img/products-slider-2.png);"></div>
+								<div class="products__text">Коврики резиновые PREMIUM для KIA Optima IV</div></a>
+							<span class="products__type">Комплект</span>
+							<div class="products-bottom flex-between">
+								<span class="old-price">3500 руб</span>
+								<span class="products__price">3000 руб</span>
+								<span class="products__star modal-btn icon-star-products" data-target="fav-modal"></span>
+								<span class="products__cart modal-btn flex-c-c" data-target="cart-modal"><span class="icon-cart-products"></span></span>
+							</div>
+						</div>
+						<div class="products-item">
+							<a href="../documents/product.html" class="products-link"><div class="products__img" style="background-image: url(../img/products-slider-3.png);"></div>
+								<div class="products__text">Коврики резиновые PREMIUM для KIA Optima IV</div></a>
+							<span class="products__type">Комплект</span>
+							<div class="products-bottom flex-between">
+								<span class="products__price">3000 руб</span>
+								<span class="products__star modal-btn icon-star-products" data-target="fav-modal"></span>
+								<span class="products__cart modal-btn flex-c-c" data-target="cart-modal"><span class="icon-cart-products"></span></span>
+							</div>
+						</div>
+						<div class="products-item">
+							<a href="../documents/product.html" class="products-link"><div class="products__img" style="background-image: url(../img/products-slider-1.png);"></div>
+								<div class="products__text">Коврики резиновые PREMIUM для KIA Optima IV</div></a>
+							<span class="products__type">Комплект</span>
+							<div class="products-bottom flex-between">
+								<span class="products__price">3000 руб</span>
+								<span class="products__star modal-btn icon-star-products" data-target="fav-modal"></span>
+								<span class="products__cart modal-btn flex-c-c" data-target="cart-modal"><span class="icon-cart-products"></span></span>
+							</div>
+						</div>
+						<div class="products-item">
+							<a href="../documents/product.html" class="products-link"><div class="products__img" style="background-image: url(../img/products-slider-2.png);"></div>
+								<div class="products__text">Коврики резиновые PREMIUM для KIA Optima IV</div></a>
+							<span class="products__type">Комплект</span>
+							<div class="products-bottom flex-between">
+								<span class="products__price">3000 руб</span>
+								<span class="products__star modal-btn icon-star-products" data-target="fav-modal"></span>
+								<span class="products__cart modal-btn flex-c-c" data-target="cart-modal"><span class="icon-cart-products"></span></span>
+							</div>
+						</div>
+						<div class="products-item">
+							<a href="../documents/product.html" class="products-link"><div class="products__img" style="background-image: url(../img/products-slider-3.png);"></div>
+								<div class="products__text">Коврики резиновые PREMIUM для KIA Optima IV</div></a>
+							<span class="products__type">Комплект</span>
+							<div class="products-bottom flex-between">
+								<span class="products__price">3000 руб</span>
+								<span class="products__star modal-btn icon-star-products" data-target="fav-modal"></span>
+								<span class="products__cart modal-btn flex-c-c" data-target="cart-modal"><span class="icon-cart-products"></span></span>
+							</div>
+						</div>
+						<div class="products-item">
+							<a href="../documents/product.html" class="products-link"><div class="products__img" style="background-image: url(../img/products-slider-1.png);"></div>
+								<div class="products__text">Коврики резиновые PREMIUM для KIA Optima IV</div></a>
+							<span class="products__type">Комплект</span>
+							<div class="products-bottom flex-between">
+								<span class="products__price">3000 руб</span>
+								<span class="products__star modal-btn icon-star-products" data-target="fav-modal"></span>
+								<span class="products__cart modal-btn flex-c-c" data-target="cart-modal"><span class="icon-cart-products"></span></span>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-pagination flex-between">
+						<div class="catalog-pagination-container flex-s">
+							<a href="#" class="catalog-pagination__item flex-c-c"><div class="icon-uniE011 font-14" style="transform: rotate(90deg);"></div></a>
+							<a href="#" class="catalog-pagination__item flex-c-c current">1</a>
+							<a href="#" class="catalog-pagination__item flex-c-c">2</a>
+							<a href="#" class="catalog-pagination__item flex-c-c">3</a>
+							<div class="catalog-pagination__more">. . .</div>
+							<a href="#" class="catalog-pagination__item flex-c-c">8</a>
+							<a href="#" class="catalog-pagination__item flex-c-c"><div class="icon-uniE011 font-14" style="transform: rotate(-90deg);"></div></a>
+						</div>
+						<span class="catalog-pagination__text">Показано с 1 по 10 из 76 (8 страниц)</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="products-slider wrapper js-animation">
+			<h1 class="title-l products__title">Ранее просмотренные</h1>
+			<div class="slider-container" data-show="4" data-scroll="4" data-show-tablet="2" data-show-mobile="1">
+				<div class="slider-item products-item">
+					<a href="../documents/product.html" class="products-link"><div class="products__img" style="background-image: url(../img/products-slider-1.png);"></div>
+						<div class="products__text">Коврики резиновые PREMIUM для KIA Optima IV</div></a>
+					<span class="products__type">Комплект</span>
+					<div class="products-bottom flex-between">
+						<span class="products__price">3000 руб</span>
+						<span class="products__star modal-btn icon-star-products" data-target="fav-modal"></span>
+						<span class="products__cart modal-btn flex-c-c" data-target="cart-modal"><span class="icon-cart-products"></span></span>
+					</div>
+				</div>
+				<div class="slider-item products-item">
+					<a href="../documents/product.html" class="products-link"><div class="products__img" style="background-image: url(../img/products-slider-2.png);"></div>
+						<div class="products__text">Коврики резиновые PREMIUM для KIA Optima IV</div></a>
+					<span class="products__type">Комплект</span>
+					<div class="products-bottom flex-between">
+						<span class="products__price">3000 руб</span>
+						<span class="products__star modal-btn icon-star-products" data-target="fav-modal"></span>
+						<span class="products__cart modal-btn flex-c-c" data-target="cart-modal"><span class="icon-cart-products"></span></span>
+					</div>
+				</div>
+				<div class="slider-item products-item">
+					<a href="../documents/product.html" class="products-link"><div class="products__img" style="background-image: url(../img/products-slider-3.png);"></div>
+						<div class="products__text">Коврики резиновые PREMIUM для KIA Optima IV</div></a>
+					<span class="products__type">Комплект</span>
+					<div class="products-bottom flex-between">
+						<span class="products__price">3000 руб</span>
+						<span class="products__star modal-btn icon-star-products" data-target="fav-modal"></span>
+						<span class="products__cart modal-btn flex-c-c" data-target="cart-modal"><span class="icon-cart-products"></span></span>
+					</div>
+				</div>
+				<div class="slider-item products-item">
+					<a href="../documents/product.html" class="products-link"><div class="products__img" style="background-image: url(../img/products-slider-4.png);"></div>
+						<div class="products__text">Коврики резиновые PREMIUM для KIA Optima IV</div></a>
+					<span class="products__type">Комплект</span>
+					<div class="products-bottom flex-between">
+						<span class="products__price">3000 руб</span>
+						<span class="products__star modal-btn icon-star-products" data-target="fav-modal"></span>
+						<span class="products__cart modal-btn flex-c-c" data-target="cart-modal"><span class="icon-cart-products"></span></span>
+					</div>
+				</div>
+				<div class="slider-item products-item">
+					<a href="../documents/product.html" class="products-link"><div class="products__img" style="background-image: url(../img/products-slider-1.png);"></div>
+						<div class="products__text">Коврики резиновые PREMIUM для KIA Optima IV</div></a>
+					<span class="products__type">Комплект</span>
+					<div class="products-bottom flex-between">
+						<span class="products__price">3000 руб</span>
+						<span class="products__star modal-btn icon-star-products" data-target="fav-modal"></span>
+						<span class="products__cart modal-btn flex-c-c" data-target="cart-modal"><span class="icon-cart-products"></span></span>
+					</div>
+				</div>
+				<div class="slider-item products-item">
+					<a href="../documents/product.html" class="products-link"><div class="products__img" style="background-image: url(../img/products-slider-2.png);"></div>
+						<div class="products__text">Коврики резиновые PREMIUM для KIA Optima IV</div></a>
+					<span class="products__type">Комплект</span>
+					<div class="products-bottom flex-between">
+						<span class="products__price">3000 руб</span>
+						<span class="products__star modal-btn icon-star-products" data-target="fav-modal"></span>
+						<span class="products__cart modal-btn flex-c-c" data-target="cart-modal"><span class="icon-cart-products"></span></span>
+					</div>
+				</div>
+				<div class="slider-item products-item">
+					<a href="../documents/product.html" class="products-link"><div class="products__img" style="background-image: url(../img/products-slider-3.png);"></div>
+						<div class="products__text">Коврики резиновые PREMIUM для KIA Optima IV</div></a>
+					<span class="products__type">Комплект</span>
+					<div class="products-bottom flex-between">
+						<span class="products__price">3000 руб</span>
+						<span class="products__star modal-btn icon-star-products" data-target="fav-modal"></span>
+						<span class="products__cart modal-btn flex-c-c" data-target="cart-modal"><span class="icon-cart-products"></span></span>
+					</div>
+				</div>
+				<div class="slider-item products-item">
+					<a href="../documents/product.html" class="products-link"><div class="products__img" style="background-image: url(../img/products-slider-4.png);"></div>
+						<div class="products__text">Коврики резиновые PREMIUM для KIA Optima IV</div></a>
+					<span class="products__type">Комплект</span>
+					<div class="products-bottom flex-between">
+						<span class="products__price">3000 руб</span>
+						<span class="products__star modal-btn icon-star-products" data-target="fav-modal"></span>
+						<span class="products__cart modal-btn flex-c-c" data-target="cart-modal"><span class="icon-cart-products"></span></span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="fav-modal modal" data-target="fav-modal">
+			<div class="fav-modal-container mx-auto">
+				<span class="modal-close"></span>
+				<p>Вы добавили товар <span class="fav-modal__name"></span> в избранное</p>
+			</div>
+		</div>
+		<div class="cart-modal modal" data-target="cart-modal">
+			<div class="cart-modal-container wrapper">
+				<span class="modal-close"></span>
+				<h2 class="cart-modal__title title-m">Вы добавили товар <span class="nowrap">в корзину</span></h2>
+				<table class="cart-table">
+					<tr class="cart-table__header">
+						<th>Товар</th>
+						<th>Цена</th>
+						<th>Количество</th>
+						<th>Сумма</th>
+					</tr>
+					<tr class="cart-table__item">
+						<td class="cart-table__product flex-s">
+							<div class="cart-table__img"><div class="img" style="background-image: url(../img/products-slider-1.png);"></div></div>
+							<div class="cart-table__text flex-between">
+								<div class="cart-table__delete icon-x-red font-16 mobile-show"></div>
+								<p class="name">Коврики резиновые PREMIUM для KIA Optima IV</p>
+								<p class="code">Код товара: <span>165068</span></p>
+								<p class="producer">Производитель: <span>Comfort-Auto</span></p>
+								<div class="tablet-show cart-table__price-tablet"><span>3000</span> руб</div>
+							</div>
+						</td>
+						<td class="cart-table__price"><span>3000</span> руб.</td>
+						<td class="cart-table__number">
+							<div class="cart-btn minus flex-c-c">-</div>
+							<input type="number" value="1">
+							<div class=" cart-btn plus flex-c-c">+</div>
+						</td>
+						<td class="cart-table__sum"><span>9 000</span> руб.<div class="cart-table__delete icon-x-red font-16 mobile-hide"></div></td>
+					</tr>
+					<tr class="cart-table__item">
+						<td class="cart-table__product flex-s">
+							<div class="cart-table__img"><div class="img" style="background-image: url(../img/products-slider-1.png);"></div></div>
+							<div class="cart-table__text flex-between">
+								<div class="cart-table__delete icon-x-red font-16 mobile-show"></div>
+								<p class="name">Коврики резиновые PREMIUM для KIA Optima IV</p>
+								<p class="code">Код товара: <span>165068</span></p>
+								<p class="producer">Производитель: <span>Comfort-Auto</span></p>
+								<div class="tablet-show cart-table__price-tablet"><span>3000</span> руб</div>
+							</div>
+						</td>
+						<td class="cart-table__price"><span>3000</span> руб.</td>
+						<td class="cart-table__number">
+							<div class="cart-btn minus flex-c-c">-</div>
+							<input type="number" value="1">
+							<div class=" cart-btn plus flex-c-c">+</div>
+						</td>
+						<td class="cart-table__sum"><span>9 000</span> руб.<div class="cart-table__delete icon-x-red font-16 mobile-hide"></div></td>
+					</tr>
+				</table>
+				<div class="cart-total flex-between">
+					<span>Итого: </span><span class="cart-total__sum">10 400 руб.</span>
+				</div>
+				<div class="cart-buttons flex-between">
+				<button class="standart-btn black-btn cart-buttons__back">продолжить покупки</button>
+				<button class="standart-btn red-btn cart-buttons__order">оформить заказ</button>
+			</div>
+			</div>
+		</div>
+
+	</main>
+
+	<footer class="footer">
+		<section class="footer-contacts flex-s">
+			<div class="wrapper flex-s">
+				<a href="#" class="footer__logo" style="background-image: url(../img/logo.png);"></a>
+				<address class="footer-address flex-between flex-no-wrap">
+					<div class="footer-address__left"><p>МО, Ленинский район, сельское поселение Молоковское, д. Андреевское,  ул. Свердлова, владение 3, строение 1</p></div>
+					<div class="footer-address__right flex-between">
+						<a href="mailto:info@comfort-avto.com" class="footer-address__email">info@comfort-avto.com</a>
+						<div class="footer-address__tel"><a href="tel:+7 812 321 11 33">+7(812) 321 11 33</a><a href="tel:+7 812 321 11 33">+7(812) 321 11 33</a></div>
+						<div class="socials flex-between">
+							<a href="#" class="socials__item flex-c-c">
+								<span class="icon-fb"></span>
+							</a>
+							<a href="#" class="socials__item flex-c-c">
+								<span class="icon-inst"></span>
+							</a>
+							<a href="#" class="socials__item flex-c-c">
+								<span class="icon-wa"></span>
+							</a>
+							<a href="#" class="socials__item flex-c-c">
+								<span class="icon-vb"></span>
+							</a>
+						</div>
+					</div>
+				</address>
+				<div class="footer-nav flex-between">
+					<div class="footer-nav__left flex-between">
+						<a href="" class="footer-nav__item">склад</a>
+						<a href="" class="footer-nav__item">производство</a>
+						<a href="" class="footer-nav__item">дилерам</a>
+					</div>
+					<div class="footer-nav__right flex-between">
+						<a href="" class="footer-nav__item">покупателям</a>
+						<a href="" class="footer-nav__item">новости</a>
+						<a href="" class="footer-nav__item">контакты</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="footer-copyrights flex-c-c">
+			<span>Comfort-Auto 2019 | Все права защищены</span>
+		</section>
+
+	</footer>
+	<script src="../script/jquery.js"></script>
+	<script src="../script/jquery-ui.min.js"></script>
+	<script src="../script/slick.min.js"></script>
+	<script src="../script/script.js"></script>
+	<script>
+		$( function() {
+			var oldValueMin = 0,
+					oldValueMax = 3000,
+					min = 0,
+					max = 3000;
+    $( "#slider-range" ).slider({
+      range: true,
+      min: min,
+      max: max,
+      values: [ 0, 3000 ],
+      slide: function( event, ui ) {
+        $( ".range__input_min" ).val(ui.values[ 0 ]);
+        $( ".range__input_max" ).val(ui.values[ 1 ]);
+      }
+    });
+
+    $('.range__input_min').on('change', function(){
+    	var value = $(this).val();
+    	var currentValues = $( "#slider-range" ).slider('option', 'values');
+
+    	if(value < min){
+    		value = min;
+    		$(this).val(min);
+    	}
+
+    	if(value > currentValues[1]){
+				value = currentValues[1];
+    		$(this).val(value);
+    	}
+
+    	currentValues[0] = value;
+
+    	$( "#slider-range" ).slider('option', 'values', currentValues);
+
+    	oldValueMin = value;
+    });
+
+    $('.range__input_max').on('change', function(){
+    	var value = $(this).val();
+    	var currentValues = $( "#slider-range" ).slider('option', 'values');
+
+    	if(value > max){
+    		value = max;
+    		$(this).val(max);
+    	}
+
+    	if(value < currentValues[0]){
+				value = currentValues[0];
+    		$(this).val(value);
+    	}
+
+    	currentValues[1] = value;
+
+    	$( "#slider-range" ).slider('option', 'values', currentValues);
+    	oldValueMax = value;
+    	
+    });
+
+    $( ".range__input_min" ).attr('min', $( "#slider-range" ).slider("option", "min"));
+    $( ".range__input_max" ).attr('max', $( "#slider-range" ).slider("option", "max"));
+    
+  } );
+	</script>
+</body>
+</html>

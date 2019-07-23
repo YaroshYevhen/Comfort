@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<header class="header flex-between">
+		<div class="header-tablet flex-c">
+			<a href="#" class="nav__logo"></a>
+			<div class="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div class="header-menu flex-c">
+			<div class="header__tel flex-between">
+				<a href="tel:+7 812 321 11 33" class="flex-c"><span class="icon-viber"></span>+7(812) 321 11 33
+				</a>
+				<a href="tel:+7 812 321 11 33" class="flex-c"><span class="icon-whatsapp"></span>+7(812) 321 11 33
+				</a>
+			</div>
+			<nav class="nav">
+				<ul class="nav__ul flex-between">
+					<li class="nav__li"><a href="documents/stock.html" class="nav__item">склад</a></li>
+					<li class="nav__li"><a href="documents/stock.html" class="nav__item">производство</a></li>
+					<li class="nav__li"><a href="documents/dealers.html" class="nav__item">дилерам</a></li>
+					<li class="nav__li logo__li"><a href="#" class="nav__item nav__logo"></a></li>
+					<li class="nav__li dropdown-parent">
+						<span class="nav__item dropdown">покупателям <span class="icon-uniE011 font-12"></span></span>
+						<ul class="dropdown-content">
+							<li class="dropdown__item"><a href="documents/categories.html">магазин</a></li>
+							<li class="dropdown__item"><a href="documents/payment&delivery.html">оплата и доставка</a></li>
+							<li class="dropdown__item"><a href="documents/return-policy.html">условия возврата</a></li>
+							<li class="dropdown__item"><a href="#">гарантия</a></li>
+							<li class="dropdown__item"><a href="documents/discounts.html">акции и скидки</a></li>
+						</ul>
+					</li>
+					<li class="nav__li"><a href="documents/news.html" class="nav__item">новости</a></li>
+					<li class="nav__li"><a href="documents/contacts.html" class="nav__item">контакты</a></li>
+				</ul>
+			</nav>
+			<span class="header__lang dropdown-parent"><span class="dropdown">рус <span class="icon-uniE011 font-10"></span></span>
+				<ul class="dropdown-content">
+					<li class="dropdown__item"><a href="#">рус</a></li>
+					<li class="dropdown__item"><a href="#">eng</a></li>
+				</ul>
+			</span>
+		</div>
+		<div class="header-icons flex-between">
+			<div class="header__tel flex-between">
+				<a href="tel:+7 812 321 11 33" class="flex-c"><span class="icon-viber"></span>+7(812) 321 11 33
+				</a>
+				<a href="tel:+7 812 321 11 33" class="flex-c"><span class="icon-whatsapp"></span>+7(812) 321 11 33
+				</a>
+			</div>
+			<span class="header__lang dropdown-parent"><span class="dropdown">рус <span class="icon-uniE011 font-10"></span></span>
+				<ul class="dropdown-content">
+					<li class="dropdown__item"><a href="#">рус</a></li>
+					<li class="dropdown__item"><a href="#">eng</a></li>
+				</ul>
+			</span>
+			<span class="header-account flex-c dropdown-parent">
+				<!-- Вход не выполнен -->
+				<span class="icon-login modal-btn" data-target="log-in"></span>
+				<p>
+					<span class="modal-btn" data-target="log-in">Вход</span> / <span class="modal-btn" data-target="registration">Регистрация</span>
+				</p>
+				<!-- -->
+				<!-- Вход выполнен -->
+				<!-- <a href="documents/account.html" class="icon-login"></a>
+				<span class="header-account__name dropdown tablet-hide">Евгений</span>
+				<ul class="dropdown-content tablet-hide">
+					<li class="dropdown__item"><a href="documents/account.html">Мой профиль</a></li>
+					<li class="dropdown__item"><a href="documents/history.html">История заказов</a></li>
+					<li class="dropdown__item exit"><a href="#">Выйти</a></li>
+				</ul> -->
+				<!-- -->
+			</span>
+			<label class="header-search"><input type="text" class="header-search__input"><span class="icon-uniE1A3"></span>
+			</label>
+			<a href="documents/favorite.html" class="icon-star">
+			</a>
+			<a href="documents/cart.html" class="icon-cart">
+			</a>
+		</div>
+	</header>
+
+	<main>
+		<div class="main-background js-animation" style="background-image: url(img/main-background.jpg);"><div class="main-background__text flex-c-c"><span>мы обеспечим безопасную половую жизнь вашему автомобилю</span></div></div>
+		<section class="catalog-slider js-animation">
+			<div class="slider-container" data-show="3" data-center="true" data-current="1" data-show-tablet="2" data-show-mobile="1" data-dots="1">
+				<a href="documents/catalog.html" class="slider-item">
+					<div class="slider__img" style="background-image: url(img/categories-1.jpg);"></div>
+					<div class="slider__text">брызговики</div>
+				</a>
+				<a href="documents/catalog.html" class="slider-item">
+					<div class="slider__img" style="background-image: url(img/categories-2.jpg);"></div>
+					<div class="slider__text">Автомобильные коврики</div>
+				</a>
+				<a href="documents/catalog.html" class="slider-item">
+					<div class="slider__img" style="background-image: url(img/categories-3.jpg);"></div>
+					<div class="slider__text">дефлекторы</div>
+				</a>
+				<a href="documents/catalog.html" class="slider-item">
+					<div class="slider__img" style="background-image: url(img/categories-1.jpg);"></div>
+					<div class="slider__text">брызговики</div>
+				</a>
+				<a href="documents/catalog.html" class="slider-item">
+					<div class="slider__img" style="background-image: url(img/categories-2.jpg);"></div>
+					<div class="slider__text">Автомобильные коврики</div>
+				</a>
+				<a href="documents/catalog.html" class="slider-item">
+					<div class="slider__img" style="background-image: url(img/categories-3.jpg);"></div>
+					<div class="slider__text">дефлекторы</div>
+				</a>
+			</div>
+			<a href="documents/categories.html" class="standart-btn mx-auto flex-c-c">смотреть каталог</a>
+		</section>
+		<section class="about wrapper js-animation">
+			<div class="about__img" style="background-image: url(img/about-img.jpg);"></div>
+			<h1 class="title-l about__title">немного о нашей компании</h1>
+			<p class="about__text">Comfort - Auto – торгово-производственная компания, действующая с 1997 года. Наша специализация – производство и продажа автомобильных аксессуаров. Продукция компании представлена во всех регионах России и странах СНГ. <br><br> Головной офис компании находится в Москве. Вместе с тем мы активно развиваем филиальную сеть, чтобы нашим клиентам и партнерам было еще удобнее работать с нами. На данный момент филиалы компании работают в городах Санкт-Петербург, Екатеринбург, <span class="nowrap">Ростов-на-Дону</span>, Самара и Новосибирск. <br><br>Мы работаем над повышением уровня сервиса, гарантируя клиентам удобные сроки поставок и различные варианты коммуникации. Партнеры SRTK получают понятную стратегию продаж, при которой каждый может просчитать и проверить свою маржинальность, а также современный онлайн-портал с возможностями отслеживания остатков на складе и размещения заказа и прочие сервисы. <br><br>Отдельное внимание мы уделяем модернизации производства, развитию R&D, внедрению новых технологий и обучению персонала. Выстроенная система управления проектами позволяет предлагать комплексные решения в формате полного цикла. В своей деятельности мы руководствуемся идеологией "Нужный продукт в нужное время в нужном месте».</p>
+			<span class="about__more">Подробнее</span>
+		</section>
+		<section class="features wrapper js-animation">
+			<h1 class="title-l features__title">наши преимущества</h1>
+			<div class="features-content flex-c">
+				<div class="features-item flex-c">
+					<img src="img/features-1.png" alt="" class="features__img">
+					<span class="features__text">Собственное производство</span>
+				</div>
+				<div class="features-item flex-c">
+					<img src="img/features-2.png" alt="" class="features__img">
+					<span class="features__text">Инновационные технологии</span>
+				</div>
+				<div class="features-item flex-c">
+					<img src="img/features-3.png" alt="" class="features__img">
+					<span class="features__text">Натуральные материалы</span>
+				</div>
+				<div class="features-item flex-c">
+					<img src="img/features-4.png" alt="" class="features__img">
+					<span class="features__text">Высокое качество</span>
+				</div>
+				<div class="features-item flex-c">
+					<img src="img/features-5.png" alt="" class="features__img">
+					<span class="features__text">Aссортимент свыше 2500 товаров</span>
+				</div>
+				<div class="features-item flex-c">
+					<img src="img/features-6.png" alt="" class="features__img">
+					<span class="features__text">Доступные цены</span>
+				</div>
+				<div class="features-item flex-c">
+					<img src="img/features-7.png" alt="" class="features__img">
+					<span class="features__text">Клиенториентиро&shy;ванный сервис</span>
+				</div>
+				<div class="features-item flex-c">
+					<img src="img/features-8.png" alt="" class="features__img">
+					<span class="features__text">Оперативная отпуска по всей России и за рубеж</span>
+				</div>
+			</div>
+		</section>
+		<section class="partners-slider wrapper js-animation">
+			<h1 class="title-l partners__title">Наши постоянные партнеры</h1>
+			<div class="slider-container" data-show="6" data-scroll="6" data-show-tablet="4" data-show-mobile="2">
+				<div class="slider-item">
+					<div class="slider__img" style="background-image: url(img/partners-slider-1.jpg);"></div>
+				</div>
+				<div class="slider-item">
+					<div class="slider__img" style="background-image: url(img/partners-slider-2.jpg);"></div>
+				</div>
+				<div class="slider-item">
+					<div class="slider__img" style="background-image: url(img/partners-slider-3.jpg);"></div>
+				</div>
+				<div class="slider-item">
+					<div class="slider__img" style="background-image: url(img/partners-slider-4.jpg);"></div>
+				</div>
+				<div class="slider-item">
+					<div class="slider__img" style="background-image: url(img/partners-slider-5.jpg);"></div>
+				</div>
+				<div class="slider-item">
+					<div class="slider__img" style="background-image: url(img/partners-slider-2.jpg);"></div>
+				</div>
+				<div class="slider-item">
+					<div class="slider__img" style="background-image: url(img/partners-slider-1.jpg);"></div>
+				</div>
+				<div class="slider-item">
+					<div class="slider__img" style="background-image: url(img/partners-slider-2.jpg);"></div>
+				</div>
+				<div class="slider-item">
+					<div class="slider__img" style="background-image: url(img/partners-slider-3.jpg);"></div>
+				</div>
+				<div class="slider-item">
+					<div class="slider__img" style="background-image: url(img/partners-slider-4.jpg);"></div>
+				</div>
+				<div class="slider-item">
+					<div class="slider__img" style="background-image: url(img/partners-slider-5.jpg);"></div>
+				</div>
+				<div class="slider-item">
+					<div class="slider__img" style="background-image: url(img/partners-slider-2.jpg);"></div>
+				</div>
+			</div>
+		</section>
+		<section class="products-slider wrapper js-animation">
+			<h1 class="title-l products__title">Популярные товары</h1>
+			<div class="slider-container" data-show="4" data-scroll="4" data-show-tablet="2" data-show-mobile="1">
+				<div class="slider-item products-item">
+					<a href="documents/product.html" class="products-link"><div class="products__img" style="background-image: url(img/products-slider-1.png);"></div>
+						<div class="products__text">Коврики резиновые PREMIUM для KIA Optima IV</div></a>
+					<span class="products__type">Комплект</span>
+					<div class="products-bottom flex-between">
+						<span class="products__price">3000 руб</span>
+						<span class="products__star icon-star-products"></span>
+						<span class="products__cart flex-c-c"><span class="icon-cart-products"></span></span>
+					</div>
+				</div>
+				<div class="slider-item products-item">
+					<a href="documents/product.html" class="products-link"><div class="products__img" style="background-image: url(img/products-slider-2.png);"></div>
+						<div class="products__text">Коврики резиновые PREMIUM для KIA Optima IV</div></a>
+					<span class="products__type">Комплект</span>
+					<div class="products-bottom flex-between">
+						<span class="products__price">3000 руб</span>
+						<span class="products__star icon-star-products"></span>
+						<span class="products__cart flex-c-c"><span class="icon-cart-products"></span></span>
+					</div>
+				</div>
+				<div class="slider-item products-item">
+					<a href="documents/product.html" class="products-link"><div class="products__img" style="background-image: url(img/products-slider-3.png);"></div>
+						<div class="products__text">Коврики резиновые PREMIUM для KIA Optima IV</div></a>
+					<span class="products__type">Комплект</span>
+					<div class="products-bottom flex-between">
+						<span class="products__price">3000 руб</span>
+						<span class="products__star icon-star-products"></span>
+						<span class="products__cart flex-c-c"><span class="icon-cart-products"></span></span>
+					</div>
+				</div>
+				<div class="slider-item products-item">
+					<a href="documents/product.html" class="products-link"><div class="products__img" style="background-image: url(img/products-slider-4.png);"></div>
+						<div class="products__text">Коврики резиновые PREMIUM для KIA Optima IV</div></a>
+					<span class="products__type">Комплект</span>
+					<div class="products-bottom flex-between">
+						<span class="products__price">3000 руб</span>
+						<span class="products__star icon-star-products"></span>
+						<span class="products__cart flex-c-c"><span class="icon-cart-products"></span></span>
+					</div>
+				</div>
+				<div class="slider-item products-item">
+					<a href="documents/product.html" class="products-link"><div class="products__img" style="background-image: url(img/products-slider-1.png);"></div>
+						<div class="products__text">Коврики резиновые PREMIUM для KIA Optima IV</div></a>
+					<span class="products__type">Комплект</span>
+					<div class="products-bottom flex-between">
+						<span class="products__price">3000 руб</span>
+						<span class="products__star icon-star-products"></span>
+						<span class="products__cart flex-c-c"><span class="icon-cart-products"></span></span>
+					</div>
+				</div>
+				<div class="slider-item products-item">
+					<a href="documents/product.html" class="products-link"><div class="products__img" style="background-image: url(img/products-slider-2.png);"></div>
+						<div class="products__text">Коврики резиновые PREMIUM для KIA Optima IV</div></a>
+					<span class="products__type">Комплект</span>
+					<div class="products-bottom flex-between">
+						<span class="products__price">3000 руб</span>
+						<span class="products__star icon-star-products"></span>
+						<span class="products__cart flex-c-c"><span class="icon-cart-products"></span></span>
+					</div>
+				</div>
+				<div class="slider-item products-item">
+					<a href="documents/product.html" class="products-link"><div class="products__img" style="background-image: url(img/products-slider-3.png);"></div>
+						<div class="products__text">Коврики резиновые PREMIUM для KIA Optima IV</div></a>
+					<span class="products__type">Комплект</span>
+					<div class="products-bottom flex-between">
+						<span class="products__price">3000 руб</span>
+						<span class="products__star icon-star-products"></span>
+						<span class="products__cart flex-c-c"><span class="icon-cart-products"></span></span>
+					</div>
+				</div>
+				<div class="slider-item products-item">
+					<a href="documents/product.html" class="products-link"><div class="products__img" style="background-image: url(img/products-slider-4.png);"></div>
+						<div class="products__text">Коврики резиновые PREMIUM для KIA Optima IV</div></a>
+					<span class="products__type">Комплект</span>
+					<div class="products-bottom flex-between">
+						<span class="products__price">3000 руб</span>
+						<span class="products__star icon-star-products"></span>
+						<span class="products__cart flex-c-c"><span class="icon-cart-products"></span></span>
+					</div>
+				</div>
+			</div>
+			<a href="documents/catalog.html" class="standart-btn mx-auto">Больше товаров</a>
+		</section>
+		<section class="news-slider wrapper js-animation">
+			<h1 class="title-l news__title">Новости</h1>
+			<div class="slider-container" data-show="1">
+				<div class="news-item">
+					<div class="news__img" style="background-image: url(img/news-slider-img.jpg);"></div>
+					<a href="documents/stock.html" class="news__content">
+						<h2 class="news__subtitle">Новые коврики!</h2>
+						<p class="news__text">Теперь Вы можете приобрести у нас коврики для Hyundai Tucson III (рестайлинг) 2018! <br>Посмотреть подробную информацию можно в каталоге в разделе Коврики...</p>
+						<div class="news__bottom flex-between">
+							<div class="news__more">
+								<span class="more__text">Читать полностью</span><span class="icon-arrow"></span>
+							</div>
+							<date class="news__date">12.05.2019</date>
+						</div>
+					</a>
+				</div>
+				<div class="news-item">
+					<div class="news__img" style="background-image: url(img/news-slider-img.jpg);"></div>
+					<a href="documents/stock.html" class="news__content">
+						<h2 class="news__subtitle">Новые коврики!</h2>
+						<p class="news__text">Теперь Вы можете приобрести у нас коврики для Hyundai Tucson III (рестайлинг) 2018! <br>Посмотреть подробную информацию можно в каталоге в разделе Коврики...</p>
+						<div class="news__bottom flex-between">
+							<div class="news__more">
+								<span class="more__text">Читать полностью</span><span class="icon-arrow"></span>
+							</div>
+							<date class="news__date">12.05.2019</date>
+						</div>
+					</a>
+				</div>
+
+			</div>
+		</section>
+		<section class="questions js-animation" style="background-image: url(img/questions-background.jpg);">
+			<div class="questions__opacity"></div>
+			
+			<div class="wrapper">
+				<h1 class="title-l questions__title">у вас появились к нам вопросы?</h1>
+				<div class="questions-form">
+					<div class="flex-between">
+						<input type="text" class="questions__name" placeholder="Имя">
+						<input type="tel" class="questions__tel" placeholder="Телефон">
+						<input type="email" class="questions__email" placeholder="Почта">
+					</div>
+					<textarea name="question" cols="30" rows="5" class="questions__text" placeholder="Ваш вопрос"></textarea>
+					<button class="standart-btn red-btn mx-auto modal-btn" data-target="questions-modal">Отправить</button>
+				</div>
+				
+			</div>
+		</section>
+	<div class="questions-modal modal" data-target="questions-modal">
+		<div class="questions-modal-container mx-auto">
+			<span class="modal-close"></span>
+			<h3>Спасибо!</h3>
+			<p>Ваше обращение успешно отправлено. В ближайшее время с вами свяжется наш представитель</p>
+		</div>
+	</div>
+	<div class="log-in-modal modal" data-target="log-in">
+		<div class="log-in-modal-container mx-auto">
+			<span class="modal-close"></span>
+			<h2 class="title-m log-in-modal__title">Войти</h2>
+			<input type="email" placeholder="Электронная почта">
+			<label class="pass"><input type="password" placeholder="Пароль"><i class="icon-password"></i></label>
+			<button class="log-in-btn standart-btn red-btn">Войти</button>
+			<div class="flex-c-c">
+				<a href="#">Я забыл(а) пароль</a>
+			</div>
+			<div class="flex-c-c">
+				<p>Я не зарегистрированный пользователь</p>
+			</div>
+			<div class="flex-c-c">
+				<a href="#">Зарегистрироваться</a>
+			</div>
+		</div>
+	</div>
+	<div class="log-in-modal modal" data-target="registration">
+		<div class="log-in-modal-container mx-auto">
+			<span class="modal-close"></span>
+			<h2 class="title-m log-in-modal__title">регистрация</h2>
+			<input type="text" placeholder="Имя">
+			<input type="email" placeholder="Электронная почта">
+			<label class="pass"><input type="password" placeholder="Пароль"><i class="icon-password"></i></label>
+			<label class="pass"><input type="password" placeholder="Повторите пароль"><i class="icon-password"></i></label>
+			<button class="log-in-btn standart-btn red-btn">регистрация</button>
+			<div class="flex-c-c">
+				<p>У меня уже есть аккаунт</p>
+			</div>
+			<div class="flex-c-c">
+				<a href="#">Войти</a>
+			</div>
+		</div>
+	</div>
+	</main>
+
+	<footer class="footer">
+		<section class="footer-contacts flex-s">
+			<div class="wrapper flex-s">
+				<a href="#" class="footer__logo" style="background-image: url(img/logo.png);"></a>
+				<address class="footer-address flex-between flex-no-wrap">
+					<div class="footer-address__left"><p>МО, Ленинский район, сельское поселение Молоковское, д. Андреевское,  ул. Свердлова, владение 3, строение 1</p></div>
+					<div class="footer-address__right flex-between">
+						<a href="mailto:info@comfort-avto.com" class="footer-address__email">info@comfort-avto.com</a>
+						<div class="footer-address__tel"><a href="tel:+7 812 321 11 33">+7(812) 321 11 33</a><a href="tel:+7 812 321 11 33">+7(812) 321 11 33</a></div>
+						<div class="socials flex-between">
+							<a href="#" class="socials__item flex-c-c">
+								<span class="icon-fb"></span>
+							</a>
+							<a href="#" class="socials__item flex-c-c">
+								<span class="icon-inst"></span>
+							</a>
+							<a href="#" class="socials__item flex-c-c">
+								<span class="icon-wa"></span>
+							</a>
+							<a href="#" class="socials__item flex-c-c">
+								<span class="icon-vb"></span>
+							</a>
+						</div>
+					</div>
+				</address>
+				<div class="footer-nav flex-between">
+					<div class="footer-nav__left flex-between">
+						<a href="" class="footer-nav__item">склад</a>
+						<a href="" class="footer-nav__item">производство</a>
+						<a href="" class="footer-nav__item">дилерам</a>
+					</div>
+					<div class="footer-nav__right flex-between">
+						<a href="" class="footer-nav__item">покупателям</a>
+						<a href="" class="footer-nav__item">новости</a>
+						<a href="" class="footer-nav__item">контакты</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="footer-copyrights flex-c-c">
+			<span>Comfort-Auto 2019 | Все права защищены</span>
+		</section>
+
+	</footer>
+	<script src="script/jquery.js"></script>
+	<script src="script/slick.min.js"></script>
+	<script src="script/script.js"></script>
+</body>
+</html>
