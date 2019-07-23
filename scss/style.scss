@@ -209,8 +209,15 @@ input::-webkit-inner-spin-button {
 textarea {
 	overflow: auto;
 	resize: none;
+	&::placeholder {
+		color: #424242;
+	}
 }
-
+input {
+	&::placeholder {
+		color: #424242;
+	}
+}
 a:hover {
 	text-decoration: none;
 }
@@ -1130,9 +1137,6 @@ body.menu {
 		resize: none;
 		padding: 15px 20px;
 		color: #fff;
-		&::placeholder {
-			color: #424242;
-		}
 		&:active,
 		&:focus {
 			transition: border-color .3s;
