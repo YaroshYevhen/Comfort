@@ -2062,6 +2062,7 @@ input:checked ~ .checkmark {
 				z-index: 1;
 				padding-right: 5px;
 				&:last-of-type {
+					margin-left: auto;
 					font-weight: 600;
 					padding-right: 0px;
 					padding-left: 5px;
@@ -2072,6 +2073,7 @@ input:checked ~ .checkmark {
 				position: absolute;
 				width: 100%;
 				bottom: 3px;
+				left: 0;
 				border-bottom: 1px dotted #b7b7b7;
 			}
 			& + .product-char__item {

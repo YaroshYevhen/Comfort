@@ -2465,6 +2465,7 @@ input:checked ~ .checkmark::before {
 }
 
 .product-char__item span:last-of-type {
+  margin-left: auto;
   font-weight: 600;
   padding-right: 0px;
   padding-left: 5px;
@@ -2475,6 +2476,7 @@ input:checked ~ .checkmark::before {
   position: absolute;
   width: 100%;
   bottom: 3px;
+  left: 0;
   border-bottom: 1px dotted #b7b7b7;
 }
 
