@@ -3083,6 +3083,7 @@ input:checked ~ .checkmark::before {
 }
 
 .contacts-form {
+  overflow: hidden;
   width: 445px;
   margin-right: 0;
 }

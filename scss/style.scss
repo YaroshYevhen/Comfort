@@ -2607,6 +2607,7 @@ input:checked ~ .checkmark {
 		margin-bottom: 45px;
 	}
 	&-form {
+		overflow: hidden;
 		width: 445px;
 		margin-right: 0;
 	}
