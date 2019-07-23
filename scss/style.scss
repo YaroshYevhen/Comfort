@@ -206,6 +206,10 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
+textarea {
+	overflow: auto;
+	resize: none;
+}
 
 a:hover {
 	text-decoration: none;
