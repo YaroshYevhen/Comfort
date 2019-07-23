@@ -799,7 +799,10 @@
 		}
 		&__logo {
 			height: 100px;
-			padding: 25px 20px;
+			img {
+				max-width: calc(100% - 40px);
+				max-height: calc(100% - 50px);
+			}
 		}
 	}
 	.return {

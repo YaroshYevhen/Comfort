@@ -745,7 +745,10 @@
   }
   .delivery__logo {
     height: 100px;
-    padding: 25px 20px;
+  }
+  .delivery__logo img {
+    max-width: calc(100% - 40px);
+    max-height: calc(100% - 50px);
   }
   .return {
     margin-bottom: 90px;
