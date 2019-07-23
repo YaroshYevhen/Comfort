@@ -1,5 +1,23 @@
 /* max-width: 1025px */
 @media (min-width: 1025px) {
+  .catalog-filters__selected:hover {
+    border-color: #ff0000;
+  }
+  .ui-slider-handle:hover {
+    border-color: #5d0400;
+  }
+  .ui-slider-handle:hover::before {
+    border-color: #5d0400;
+  }
+  .ui-slider-handle:hover::after {
+    border-color: #5d0400;
+  }
+  .modal-close:hover::before {
+    background-color: #000;
+  }
+  .modal-close:hover::after {
+    background-color: #000;
+  }
   .modal-slider .slick-arrow:hover {
     background-color: transparent;
     border: none;
@@ -53,7 +71,9 @@
   }
   .catalog-slider .slider-item:hover,
   .products-item:hover,
-  .categories-item:hover {
+  .categories-item:hover,
+  .discounts-item:hover,
+  .news .news-item:hover {
     box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.15);
   }
   .products__cart:hover {

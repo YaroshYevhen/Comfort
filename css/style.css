@@ -1295,6 +1295,7 @@ body.menu .header-icons {
 }
 
 .news__more .more__text {
+  margin-right: 10px;
   text-decoration: underline #bcbcbc;
   transition: text-decoration .3s;
 }
@@ -1382,7 +1383,7 @@ body.menu .header-icons {
   background-color: #000;
   border: 1px solid #424242;
   resize: none;
-  padding: 20px;
+  padding: 15px 20px;
   color: #fff;
 }
 
@@ -1876,6 +1877,8 @@ input:checked ~ .checkmark::before {
   margin: 0 0 10px 10px;
   font-size: 14px;
   line-height: 1;
+  transition: border .3s;
+  user-select: none;
 }
 
 .catalog-filters .icon-x-red {
@@ -2234,6 +2237,8 @@ input:checked ~ .checkmark::before {
   width: 13px;
   border: 1px solid #b3b3b3;
   background-color: #fff;
+  cursor: pointer;
+  transition: border .3s;
 }
 
 .ui-slider .ui-slider-handle::before {
@@ -2245,6 +2250,7 @@ input:checked ~ .checkmark::before {
   left: 3px;
   border-right: 1px solid #b3b3b3;
   border-left: 1px solid #b3b3b3;
+  transition: border .3s;
 }
 
 .ui-slider .ui-slider-handle::after {
@@ -2255,6 +2261,7 @@ input:checked ~ .checkmark::before {
   background-color: #b3b3b3;
   top: 4px;
   left: 5px;
+  transition: border .3s;
 }
 
 .range {
@@ -2966,6 +2973,7 @@ input:checked ~ .checkmark::before {
   height: 160px;
   border: 1px solid #ebebeb;
   margin: 0 0 30px 30px;
+  transition: box-shadow .3s;
 }
 
 .discounts__img {
@@ -3018,6 +3026,10 @@ input:checked ~ .checkmark::before {
 /* NEWS-PAGE */
 .news {
   margin-bottom: 140px;
+}
+
+.news .news-item {
+  transition: box-shadow .3s;
 }
 
 .news .news-item + .news-item {
@@ -3883,6 +3895,7 @@ input:checked ~ .checkmark::before {
   left: -2px;
   top: 6px;
   transform: rotate(45deg);
+  transition: background-color .3s;
 }
 
 .modal-close::after {
@@ -3894,4 +3907,5 @@ input:checked ~ .checkmark::before {
   left: -2px;
   top: 6px;
   transform: rotate(135deg);
+  transition: background-color .3s;
 }

@@ -1041,6 +1041,7 @@ body.menu {
 		cursor: pointer;
 		transition: color .3s;
 		.more__text {
+			margin-right: 10px;
 		text-decoration: underline #bcbcbc;
 		transition: text-decoration .3s;
 	}
@@ -1123,7 +1124,7 @@ body.menu {
 		background-color: #000;
 		border: 1px solid rgb(66, 66, 66);
 		resize: none;
-		padding: 20px;
+		padding: 15px 20px;
 		color: #fff;
 		&:active,
 		&:focus {
@@ -1558,6 +1559,8 @@ input:checked ~ .checkmark {
 			margin: 0 0 10px 10px;
 			font-size: 14px;
 			line-height: 1;
+			transition: border .3s;
+			user-select: none;
 		}
 		.icon-x-red {
 			margin-left: 5px;
@@ -1869,6 +1872,8 @@ input:checked ~ .checkmark {
 	width: 13px;
 	border: 1px solid #b3b3b3;
 	background-color: #fff;
+	cursor: pointer;
+	transition: border .3s;
 	&::before {
 		content: "";
 		position: absolute;
@@ -1878,6 +1883,7 @@ input:checked ~ .checkmark {
 		left: 3px;
 		border-right: 1px solid #b3b3b3;
 		border-left: 1px solid #b3b3b3;
+		transition: border .3s;
 	}
 	&::after {
 		content: "";
@@ -1887,6 +1893,7 @@ input:checked ~ .checkmark {
 		background-color: #b3b3b3;
 		top: 4px;
 		left: 5px;
+		transition: border .3s;
 	}
 }
 .range {
@@ -2506,6 +2513,7 @@ input:checked ~ .checkmark {
 		height: 160px;
 		border: 1px solid #ebebeb;
 		margin: 0 0 30px 30px;
+		transition: box-shadow .3s;
 	}
 	&__img {
 		height: 100%;
@@ -2553,6 +2561,7 @@ input:checked ~ .checkmark {
 .news {
 	margin-bottom: 140px;
 	.news-item {
+		transition: box-shadow .3s;
 		& + .news-item {
 			margin-top: 30px;
 		}
@@ -3306,6 +3315,7 @@ input:checked ~ .checkmark {
     left: -2px;
     top: 6px;
     transform: rotate(45deg);
+    transition: background-color .3s;
   }
   &::after {
     content: "";
@@ -3316,5 +3326,6 @@ input:checked ~ .checkmark {
     left: -2px;
     top: 6px;
     transform: rotate(135deg);
+    transition: background-color .3s;
   }
 }
