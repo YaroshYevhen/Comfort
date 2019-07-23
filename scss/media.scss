@@ -8,6 +8,12 @@
 			box-shadow: none;
 		}
 	}
+	.breadcrumbs__item:hover {
+		color: #000;
+	}
+	.catalog-dropdown__item:hover {
+		color: #5d0400;
+	}
 	.news__content:hover .news__more {
 		color: #5d0400;
 		.more-text {
@@ -19,6 +25,9 @@
 		span {
 			text-decoration: underline #5d0400;
 		}
+	}
+	.cart-table__delete:hover {
+		transform: rotate(90deg);
 	}
 	.nav__item:hover,
 	.header__tel a:hover,

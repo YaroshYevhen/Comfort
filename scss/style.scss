@@ -195,7 +195,9 @@ main {
 	background-color: #fff;
 	margin-top: 120px;
 }
-
+address {
+	font-style: normal;
+}
 button, select {
 	outline: none !important;
 }
@@ -291,13 +293,14 @@ a:hover {
 .breadcrumbs {
   font-size: 14px;
   font-weight: 300;
-  margin-top: 35px;
+  padding-top: 35px;
   color: #5c5c5c;
   margin-bottom: 30px;
   position: relative;
 }
 
 .breadcrumbs__item {
+	transition: color .3s;
   display: inline;
   &::after {
   	content: " /";
@@ -386,6 +389,9 @@ input[type="text"] + .icon-password {
 	background-color: rgba(8, 8, 8, 0.9);
 	color: #b9b9b9;
 	z-index: 100;
+	&.black {
+		background-color: #000;
+	}
 	.icon-uniE011 {
 		margin-left: 5px;
 	}
@@ -2161,7 +2167,7 @@ input:checked ~ .checkmark {
 	margin-bottom: 140px;
 	&-page {
 		main {
-			min-height: calc(100vh - 512px);
+			min-height: calc(100vh - 477px);
 		}
 	}
 	&__title {
@@ -2173,6 +2179,8 @@ input:checked ~ .checkmark {
 			position: absolute;
 			right: 0px;
 			top: 15px;
+			transition: transform .3s;
+			transform: rotate(0);
 		}
 		&__header {
 			border-bottom: 1px solid #ebebeb;
@@ -3081,13 +3089,6 @@ input:checked ~ .checkmark {
 		}
 		&__tel {
 			font-weight: 600;
-			a {
-				& + a {
-					&::before {
-						content: ", ";
-					}
-				}
-			}
 		}
 		&__email {
 			font-size: 14px;

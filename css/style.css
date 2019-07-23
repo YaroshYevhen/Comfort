@@ -336,6 +336,10 @@ main {
   margin-top: 120px;
 }
 
+address {
+  font-style: normal;
+}
+
 button, select {
   outline: none !important;
 }
@@ -447,13 +451,14 @@ a:hover {
 .breadcrumbs {
   font-size: 14px;
   font-weight: 300;
-  margin-top: 35px;
+  padding-top: 35px;
   color: #5c5c5c;
   margin-bottom: 30px;
   position: relative;
 }
 
 .breadcrumbs__item {
+  transition: color .3s;
   display: inline;
 }
 
@@ -557,6 +562,10 @@ input[type="text"] + .icon-password {
   background-color: rgba(8, 8, 8, 0.9);
   color: #b9b9b9;
   z-index: 100;
+}
+
+.header.black {
+  background-color: #000;
 }
 
 .header .icon-uniE011 {
@@ -2565,7 +2574,7 @@ input:checked ~ .checkmark::before {
 }
 
 .cart-page main {
-  min-height: calc(100vh - 512px);
+  min-height: calc(100vh - 477px);
 }
 
 .cart__title {
@@ -2580,6 +2589,8 @@ input:checked ~ .checkmark::before {
   position: absolute;
   right: 0px;
   top: 15px;
+  transition: transform .3s;
+  transform: rotate(0);
 }
 
 .cart-table__header {
@@ -3621,10 +3632,6 @@ input:checked ~ .checkmark::before {
 
 .footer-address__tel {
   font-weight: 600;
-}
-
-.footer-address__tel a + a::before {
-  content: ", ";
 }
 
 .footer-address__email {
