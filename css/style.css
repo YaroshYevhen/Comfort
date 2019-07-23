@@ -1979,6 +1979,7 @@ input:checked ~ .checkmark::before {
 .catalog-filters__checkbox span {
   width: calc(100% - 40px);
   margin-left: 25px;
+  user-select: none;
 }
 
 .catalog-filters__checkbox + .catalog-filters__checkbox {
@@ -2844,6 +2845,7 @@ input:checked ~ .checkmark::before {
   width: 240px;
   height: 150px;
   text-align: center;
+  transition: box-shadow .3s;
 }
 
 .order__checkbox img {
