@@ -699,6 +699,9 @@ body.menu {
 	margin-right: auto;
 	margin-top: -100px;
 	margin-bottom: 90px;
+	&__btn {
+		width: 330px;
+	}
 	.slider {
 		&-container {
 			margin-bottom: 30px;

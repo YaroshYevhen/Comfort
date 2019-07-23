@@ -915,6 +915,10 @@ body.menu .header-icons {
   margin-bottom: 90px;
 }
 
+.catalog-slider__btn {
+  width: 330px;
+}
+
 .catalog-slider .slider-container {
   margin-bottom: 30px;
 }
